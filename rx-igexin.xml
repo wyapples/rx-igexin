@@ -1,0 +1,4 @@
+<prescription xmlns="http://greenify.github.io/schemas/prescription/v2" type="service" sender="any" class="com.igexin.sdk.PushService">
+  <intent-filter>
+  </intent-filter>
+</prescription>
