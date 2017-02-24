@@ -1,5 +1,6 @@
 <prescriptions xmlns="http://greenify.github.io/schemas/prescription/v2">
-  <prescription type="service" sender="any" class="com.igexin.sdk.PushService"></prescription>
-  <prescription type="service" sender="any" class="com.igexin.download.DownloadService"></prescription>
-  <prescription type="service" sender="any" class="com.igexin.getuiext.service.GetuiExtService"></prescription>
+  <prescription type="service" sender="any" class="com.igexin.sdk.PushService"/>
+  <prescription type="service" sender="any" class="com.igexin.sdk.PushReceiver"/>
+  <prescription type="service" sender="any" class="com.igexin.download.DownloadService"/>
+  <prescription type="service" sender="any" class="com.igexin.getuiext.service.GetuiExtService"/>
 </prescriptions>
