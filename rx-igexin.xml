@@ -1,33 +1,6 @@
-<prescriptions xmlns="http://greenify.github.io/schemas/prescription/v2">
-  <prescription type="service" sender="any" class="com.igexin.sdk.PushService">
-    <intent-filter>
-        <action android:name="com.igexin.sdk.action.service.message"/>
-    </intent-filter>
-  </prescription>
-  <prescription type="service" sender="any" class="com.igexin.sdk.PushServiceUser"/>
-  <prescription type="broadcast" sender="any" class="com.igexin.sdk.PushReceiver">
-    <intent-filter>
-        <action android:name="android.intent.action.BOOT_COMPLETED"/>
-        <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
-        <action android:name="android.intent.action.USER_PRESENT"/>
-        <action android:name="com.igexin.sdk.action.refreshls"/>
-        <action android:name="android.intent.action.MEDIA_MOUNTED"/>
-        <action android:name="android.intent.action.ACTION_POWER_CONNECTED"/>
-        <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED"/>
-    </intent-filter>
-  </prescription>
-  <prescription type="broadcast" sender="any" class="com.igexin.sdk.PushManagerReceiver">
-    <intent-filter>
-        <action android:name="com.igexin.sdk.action.pushmanager"/>
-    </intent-filter>
-  </prescription>
-  <prescription type="service" sender="any" class="com.igexin.download.DownloadService"/>
-  <prescription type="service" sender="any" class="com.igexin.download.DownloadProvider"/>
-  <prescription type="broadcast" sender="any" class="com.igexin.download.DownloadReceiver">
-    <intent-filter>
-        <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
-    </intent-filter>
-  </prescription>
-  <prescription type="activity" sender="any" class="com.igexin.sdk.PushActivity"/>
-  <prescription type="activity" sender="any" class="com.igexin.sdk.GActivity"/>
+<prescriptions xmlns="http://greenify.github.io/schemas/prescription/v3">
+  <prescription type="service" sender="other-app" class="com.igexin.sdk.PushService"/>
+  <prescription type="service" sender="other-app" class="com.igexin.sdk.PushServiceUser"/>
+  <prescription type="service" sender="other-app" class="com.igexin.sdk.PushActivity"/>
+  <prescription type="service" sender="other-app" class="com.igexin.sdk.GActivity"/>
 </prescriptions>
