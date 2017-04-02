@@ -1,4 +1,5 @@
 <prescriptions xmlns="http://greenify.github.io/schemas/prescription/v3">
+  <prescription type="service" sender="other-app" class="com.getui.gis.sdk.GInsightService"/>
   <prescription type="service" sender="other-app" class="com.igexin.sdk.PushService"/>
   <prescription type="service" sender="other-app" class="com.igexin.sdk.PushServiceUser"/>
   <prescription type="service" sender="other-app" class="com.igexin.sdk.PushActivity"/>
